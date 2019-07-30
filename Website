@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Digital Command Control Hub</title>
+        <link href="https://fonts.googleapis.com/css?family=Raleway|Montserrat" rel="stylesheet">
+        <style>
+            body {
+                    font-family: "Raleway", arial;
+                    color: black;
+                    background-attachment: fixed;
+                    background-color: rgba(255, 255, 255, 1);
+                    margin: 0px;
+            }
+            header {
+                font-family: "Raleway", arial;
+                color: black;
+                text-decoration: none;
+                text-align: center;
+                position: fixed;
+                top: 0%;
+                left: 0%;
+                right: 0%;
+                background-color: rgb(255, 255, 255);
+            }
+            nav {
+                position: sticky;
+                background-color: rgb(255, 255, 255);
+                padding-top: 0.1%;
+                padding-bottom: 1%;
+                overflow-y : hidden;
+                height : 22px;
+                line-height : 25px;
+                box-shadow:2px 9px 8px rgb(186, 186, 186);
+                border-radius: 0px;
+            }
+            nav a {
+                font-family: "Raleway", arial;
+                color: black;
+                padding: 1% 1%;
+                margin : 0% 3%;
+                transition: all 0.3s;
+                font-size: 18px;
+            }
+            nav a:hover {
+                padding : 1% 1%;
+                margin : 0% 3%;
+                font-weight: bold;
+                border-radius: 2px;
+                transition: all 0.1s;
+                text-decoration: none;
+                color: rgb(0, 109, 117);
+                /*background-color: rgb(208, 234, 245);*/
+            }
+            ::-webkit-scrollbar {
+                width: 6px;
+            }
+            ::-webkit-scrollbar-track {
+                background-color: rgb(240, 240, 240);
+            }
+            ::-webkit-scrollbar-thumb {
+                width: 6px;
+                background-color: rgb(200, 200, 200);
+                border-radius: 10px;
+            }
+            ::-webkit-scrollbar-thumb:hover {
+                background-color: rgb(150, 150, 150);
+                border-radius: 10px;
+            }
+            ::-webkit-scrollbar-thumb:active {
+                width: 18px;
+                background-color: rgb(130, 130, 130);
+                border-radius: 10px;
+            }
+             a {
+                color: black;
+                font-weight: bold;
+                text-decoration: none;
+                transition: all 0.1s;
+            }
+            a:hover {
+                color: rgb(0, 109, 117);
+                transition: all 0.1s;
+            }
+            .href {
+                background-color: white;
+                color: black;
+                text-decoration: none;
+                padding: 10px;
+                font-size: 15px;
+                border: 2px solid rgb(0, 0, 0);
+                border-radius: 50px;
+            }
+            .infobox b {
+                color: rgb(0, 48, 51);
+                font-family: "Raleway", arial;
+            }
+            .infobox i {
+                color: rgb(0, 48, 51);
+            }
+            .infobox {
+                font-family: "Montserrat", arial;
+                background-color: rgb(235, 235, 235);
+                padding: 10px;
+                border-radius: 15px;
+                box-shadow:2px 7px 8px rgb(186, 186, 186);
+            }
+            .picone {
+                background-image: url("https://upload.wikimedia.org/wikipedia/commons/7/71/US_model_railroad_02.jpg");
+                background-size: cover;
+                width: 100%;
+                border-radius:15px;
+            }
+            .pictwo {
+                background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Schema_DCC_en.svg/720px-Schema_DCC_en.svg.png");
+                background-size: cover;
+                background-color: rgb(245, 245, 245);
+                width: 100%;
+                border-radius:15px;
+            }
+            .picthree {
+                background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Santa_Fe_Line_at_San_Diego_Model_Railroad_Museum.jpg/1024px-Santa_Fe_Line_at_San_Diego_Model_Railroad_Museum.jpg");
+                background-size: cover;
+                width: 100%;
+                border-radius:15px;
+            }
+            .picfour {
+                background-image: url("https://upload.wikimedia.org/wikipedia/commons/4/47/Computer_chips_circuits_boards.jpg");
+                background-size: cover;
+                width: 100%;
+                border-radius:15px;
+            }
+            .picfive {
+                background-image: url("https://upload.wikimedia.org/wikipedia/commons/d/d9/HO_Layout_1.jpg");
+                background-size:cover;
+                width: 100%;
+                border-radius:15px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Digital Command Control</h1> <!--Header Text--->
+        <nav>
+            <a id = "one" href = "javascript: changePage(1);void 0;">Home</a><a id = "two" href = "javascript: changePage(2);void 0;">About</a><a id = "three" href = "javascript: changePage(3);void 0;">Equipment</a><a id = "four" href = "javascript: changePage(4);void 0;">Advanced</a><a id = "four" href = "javascript: changePage(5);void 0;">LCC</a></nav> <!--Navigation Bar--->
+        </header> <!--Fixed Nav Bar--->
+        
+        <div class = "page">
+            <div style = "background-color: rgba(252, 252, 252, 1); padding: 10px">
+            
+                 <div class = "picone">
+                   <p style = "margin-top:21%; padding: 110px; text-align: center"><a style = "background-color: rgba(255, 255, 255, 0); padding: 10px; border-radius: 50px;"></a></p>
+                </div>
+                <p style = "font-size: 25px;text-align: center;">Welcome to the world of DCC</p>
+                <p style = "font-size: 16px;text-align: center;">Your one-stop hub for everything related to Digital Command Control</p><br>
+                <p style = "text-align: center;">For more information on DCC, please visit
+                <a href = "https://dccwiki.com">DCC Wiki</a>.</p>
+                <p style = "font-size:10px; margin-top: 5%; text-align: center">© 2019 Eclipse</p>
+                </div>
+        </div> <!--Home Page-->
+        
+        <div class = "page">
+        <div style = "background-color: rgba(252, 252, 252, 1); padding: 10px" id = "back">
+            <div class = "pictwo">
+                   <p style = "margin-top:22%; padding: 110px; text-align: center"><a style = "background-color: rgba(255, 255, 255, 0); padding: 10px; border-radius: 50px;"></a></p>
+                </div>
+                <p style = "font-size: 25px;text-align: center;">About DCC</p>
+                <p style = "font-size: 16px;text-align: center;">All the basics of Digital Command Control</p>
+                
+                <p class = "infobox"><b>What is DCC</b><br><br>
+ Digital Command Control (DCC) is an open-source technology created for the use of model railroads. It allows for indvidual, independant operation of model locomotives on the same electrical section of track, by sending small packets of data one-way from the command station, through the booster, to the locomotive's decoder, via an electric wiring connection.<br><br> Along with individual locomotive operation, DCC offers a host of other exciting technologies, like consisting with multiple locomotives, operation of locomotives' sound and lighting effects, changing locomotives' individual Configuration Variables (CV's), and more, making it a powerful system for controlling a model railroad.</p> 
+ <p class = "infobox" style = "margin-top:5%;"><b>Building for the future</b><br><br>
+ Since its creation in the 1990's, it has expanded to become even better over time, due to its open-source design, which allows developers from all around the world to contribute. The National Model Railroad Association (NMRA) is responsible for creating and maintaining standards for DCC, to make sure it works the same for everyone, regardless of the manufacturer of their equipment. Other companies have also stepped in, to help provide semi-open-source feature additions to DCC. An example is Lenz, who provides RailCom, which allows for a more useful and versatile experience while programming CV's.<br><br>Today, over 20 years after its first inception, DCC continues to grow and build for the future. Almost every currently available locomotive from manufacturers at least offers an option of DCC pre-installed, and essentially all locomotive offerings come DCC-Ready out of the box, meaning that they have all the neccesary space and wiring to easily install a decoder. In addition, most DCC control systems available today offer cutting edge features, like a computer interface through JMRI software, Wi-Fi control compatibility, and even a new sister technology of DCC called Layout Command Control (LCC), which speeds up DCC operations and improves layout effect operation.
+</p>
+                <p style = "font-size:10px; margin-top: 8%; text-align: center">© 2019 Eclipse</p>
+            </div>
+        </div> <!--About Page-->
+        
+        <div class = "page">
+        <div style = "background-color: rgba(252, 252, 252, 1); padding: 10px" id = "back">
+            <div class = "picthree">
+                   <p style = "margin-top:22%; padding: 110px; text-align: center"><a style = "background-color: rgba(255, 255, 255, 0); padding: 10px; border-radius: 50px;"></a></p>
+                </div>
+                <p style = "font-size: 25px;text-align: center;">DCC Equipment</p>
+                <p style = "font-size: 16px;text-align: center;">The devices that Digital Command Control runs on</p>
+                
+                <p class = "infobox"><b>Operator equipment</b><br><br>
+ · <i>Power supply</i> - The power supply powers the track, wiring, and all other components of the model railroad. <br><br>
+ · <i>Throttle</i> - The throttle is where the operator controls the model railroad. In some cases, the throttle is combined in the same device as the command station, though in most cases, it is a seperate, handheld device. There are many different kinds of handheld designs:<br><br>
+ · <i>Command station</i> - The command station is essentially the computer that drives the DCC system. From it, all the commands from the throttle are processed and packaged.<br><br>
+ · <i>Booster</i> - The booster is what takes the supply of power from the wall, converts and amplifies it, and then sends power to the track, along with commands from the DCC command station.<br><br>
+ · <i>Track</i> - The track is the last step of the journey for the packets that come from the command station. Data for an individual locomotive will be headed by the locomotive's address. At this point, the packet is sent to all locomotives currently on the track, however, only the locomotive bearing the address in the header will respond to the given command.<br><br>
+ 
+ </p> 
+ <p class = "infobox" style = "margin-top: 5%;"><b>Throttle types</b><br><br>
+ 
+· <i>Tethered</i> - Tethered throttles connect to a jack on the command station via a long cord. This allows for limited walkaround mobility.<br>
+· <i>Infared</i> - Infared was the original form of wireless handheld control, and works much like a TV remote. It requires a clear line of sight to the command station.<br>
+· <i>Radio</i> - Most manufacturers now offer radio control, which utilizes a proprietary radio wave band to communicate with the command station.<br>
+· <i>Computer interface & Wi-Fi</i> - Many modern systems connect with computer interfaces, which allows for programming and operation from a PC using JMRI. Another new trend is Wi-Fi control, which even allows for running trains from your smartphone, via apps like WiThrottle and Engine Driver.</p>
+
+ <p class = "infobox" style = "margin-top: 5%;"><b>Locomotive equipment</b><br><br>
+ · <i>Decoder</i> - The decoder is the locomotive's motherboard, that receives DCC commands from the command station and then carries out the requested action.<br><br>
+ · <i>Soundcard</i> - Often combined with the decoder, the soundcard takes sound commands transmitted from the decoder and then sends them to the speaker.<br><br>
+ · <i>Speaker</i> - The speaker recieves the sound command from the soundcard and proceeds to play the requested sound(s). Some locomotive speakers are augmented by external speakers to provide a more realistic effect. One example Is Broadway Limited Import's Rolling Thunder system, which features a wireless subwoofer for bass sounds.<br><br>
+ · <i>Lighting</i> - The decoder can also control locomotive lighting, based on the commands it receives. Most model trains feature many lighting effects, including headlights and numberboards.<br><br>
+ · <i>Motor</i> - DCC data packets include locomotive motor control information, like direction and speed. Speed is measured in terms of speed-steps. Depending on the decoder brand and settings, most locomotives can switch between 14, 28, and 128 speed-step modes. 128 speed-steps offers the most realistic operation, as it has much more granular speed control.
+ 
+ </p> 
+                <p style = "font-size:10px; margin-top: 8%; text-align: center">© 2019 Eclipse</p>
+            </div>
+        </div>  <!--Equipment Page-->
+        
+        <div class = "page">
+        <div style = "background-color: rgba(252, 252, 252, 1); padding: 10px" id = "back">
+            <div class = "picfour">
+                   <p style = "margin-top:22%; padding: 110px; text-align: center"><a style = "background-color: rgba(255, 255, 255, 0); padding: 10px; border-radius: 50px;"></a></p>
+                </div>
+                <p style = "font-size: 25px;text-align: center;">Advanced DCC</p>
+                <p style = "font-size: 16px;text-align: center;">DCC Configuration variables, consisting, and more</p>
+                
+                <p class = "infobox"><b>DCC addresses</b><br><br>
+ Each DCC-equipped locomotive is given two unique addresses that allow the command station to send it specific commands. It's primary address is the short address, which span from 1-127, and is set by CV 01. The secondary address, also known as the long address, can be set between 128-9999 by CV's 17 and 18. Long addresses are typically useful if you want to catergorize your locomotive fleet by their road number, which is typically a 4 digits long.
+</p>
+<p class = "infobox" style = "margin-top:5%;"><b>Functions</b><br><br>
+ All the decoder's features are typically operated using functions (F). Most decoders usually feature 30 functions, including F0f and F0r. F0f and F0r are always set to control the headlights in forward and reverse, and there are sometimes a few more lighting functions, depending on the brand of decoder. The rest of the functions are used to control locomotive sounds, like startup/shutdown, bell, horn/whistle, radio chatter, etc. Typically, function key assignment can be tweaked through CV's.
+ </p> 
+                <p class = "infobox" style = "margin-top:5%;"><b>Configuration variables</b><br><br>
+ DCC Configuration Variables (CV's) are a memory location in the decoder that controls its behavior. They are essentially the preference files that save the settings on a computer. Once set, the value is retained unless the memory becomes corrupted. CV's control many functions on the decoder, like individual volume levels, sound settings, motor control, and more.<br><br>
+     CV's can be programmed in two ways. The first way is using a dedicated programming track, connected to a special hook-up on the command station. The programming track is typically safer for the locomotive and also offers CV read-back, which basically means the operator can see what the CV's are currently set at.<br><br>
+     The other way, which is typically used more, is called Programming on the Main (PoM). This allows for CV programming while the locomotive is still on the main layout track. While it is easier, it isn't as versatile as using the programming track. One notable difference, is that in standard DCC systems, PoM does not allow CV read-back. Systems like Lenz's RailCom and Digitrax's Transponding, however, bring this functionality to PoM.
+ </p> 
+ <p class = "infobox" style = "margin-top:5%;"><b>DCC consisting</b><br><br>
+ Consisting is essentially operating and controlling several locomotives as if they were a single entity. This is useful for realistic operation, as most trains in real life are typically led by two or more locomotives in a consist. DCC replicates this, in 3 different ways.<br><br>
+ The first type of consisting is known as simple consisting, and it is by far the most basic. By simply programming two or more locomotives to the same DCC address, a simple consist is created. There are some downsides to this approach, however. The most notable one is that independant function control is no longer allowed, and anything you do for one locomotive will also be done on the other locomotive.<br><br>
+ Universal, or basic, consisting is where the command station stores the locomotive address information for the consist in its memory. While it is one of the easiest ways to consist, it has many downsides. One is that the command station only has a limited amount of memory, and having multiple consists can slow it down dramatically. Another problem is that it only allows function control for the lead locomotive in the consist.<br><br>
+ Advanced consisting is the newest solution and is by far the best. It works by creating a separate short address for the consist, which is written in CV 19 of all the locomotives in the consist, and offers plenty of customization through CV's. Advanced consisting has many upsides over other forms of consisting, like independant function control for all locomotives in the consist. Its only downside is that it takes slightly longer to set up than simple and universal consisting.
+ </p> 
+ 
+                <p style = "font-size:10px; margin-top: 8%; text-align: center">© 2019 Eclipse</p>
+            </div>
+        </div> <!--Advanced Page-->
+        
+        <div class = "page">
+        <div style = "background-color: rgba(252, 252, 252, 1); padding: 10px" id = "back">
+            <div class = "picfive">
+                   <p style = "margin-top:22%; padding: 110px; text-align: center"><a style = "background-color: rgba(255, 255, 255, 0); padding: 10px; border-radius: 50px;"></a></p>
+                </div>
+                <p style = "font-size: 25px;text-align: center;">Layout Control with LCC</p>
+                <p style = "font-size: 16px;text-align: center;">The newest standards for layout operation</p>
+                
+                <p class = "infobox"><b>The future of model railroading</b><br><br>
+ Layout Command Control (LCC) is a peer-to-peer, open-source system for operating and controlling everything on the layout other than locomotives, for example, signals, turnout control, layout lighting, or even room lighting.<br><br>
+
+LCC takes the load off the DCC bus with respect to signaling, turnout routing, and other aspects of operations not related to control of locomotives, as it has a capacity ten to a hundred times greater than the typical DCC throttle bus. By doing this, it is able to prevent overload and delaying of the DCC system. It also provides bi-directional access to all the the layout system, something that DCC is typically not capable of.<br><br>
+Most importantly, it doesn't replace DCC, but works with it, by providing a dedicated system for layout accessories.
+</p>
+<p class = "infobox" style = "margin-top:5%;"><b>Works with LCC</b><br><br>
+ Layout Command Control is a common language for various layout elements to communicate with each other. It can control everything from turnouts, signals, and lights, to block detection, panels, power managers, and even room lighting. Its universal design means it opens up the model railroading world to a new age in automation and control that could only be dreamed about just a few short years ago.
+ </p> 
+ <p class = "infobox" style = "margin-top:5%;"><b>CAN Bus</b><br><br>
+ LCC uses the open-source, NMRA-approved Control Area Network (CAN) bus for layout networking. It's noise tolerant, and can operate over a wide speed range. Unlike other peer-to-peer systems, CAN can operate at a 100% data throughput rate with error free collision resolution. Its 125 kHz signalling rate and maximum run of 1000 feet is ideal for model railroading, and it works perfectly with LCC.
+ </p>
+                
+ 
+                <p style = "font-size:10px; margin-top: 8%; text-align: center">© 2019 Eclipse</p>
+            </div>
+        </div> <!--LCC Page-->
+        
+        <script>
+            var page = document.getElementsByClassName('page');
+            function changePage(index) {
+                for ( var i = 0; i < page.length; i++ ) {
+                    page[i].style.display = 'none';
+                }
+                page[index-1].style.display = 'block';
+                window.scroll(0,0);
+            }
+            changePage(1);
+        </script> <!--Sidebar and Pages-->
+    </body>
+</html>
